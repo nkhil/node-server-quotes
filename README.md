@@ -42,6 +42,8 @@ DATABASE=mongodb://username:password@youruniquelink.com:12345/database_name
 PORT=3000
 ```
 
+### Steps
+
 - Clone this repo - `git clone https://github.com/nkhil/node_boilerplate.git`
 - Install dependencies - `npm install`
 - Run the app on a local server - `npm start`
