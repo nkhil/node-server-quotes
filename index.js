@@ -11,7 +11,7 @@ mongoose.connect(process.env.DATABASE, { useNewUrlParser: true });
 mongoose.Promise = global.Promise; // Tell Mongoose to use ES6 Promises
 mongoose.connection.on('error', err => {
   // eslint-disable-next-line no-console
-  console.log(`ERROR OCCURED: ${err.message}`);
+  console.log(`\nAN ERROR OCCURED ======> ${err.message}`);
 });
 
 app.listen(process.env.PORT, () => {
