@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-const config = require('./src/config');
 require('./src/model/Thing');
+require('./src/model/Quote');
 const app = require('./src/app');
 
 // Making environment variables available to the rest of the application
