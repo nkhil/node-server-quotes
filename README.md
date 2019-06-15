@@ -4,6 +4,8 @@
 
 This is a node boilerplate to get going with building an API using node.
 
+(Make sure you read about the environment variables below)
+
 ## < More coming soon >
 
 ## Packages
@@ -12,7 +14,7 @@ This repo is a template to get me going quicker. It takes advantage of the follo
 
 ### Express
 
-This project uses [Express Generator](https://expressjs.com/en/starter/generator.html) for the application shell. I have then stripped out unnecessary folders (like `public`) and dependencies (like `jade`).
+This project uses [Express Generator](https://expressjs.com/en/starter/generator.html) for the application shell. I have then stripped out unnecessary folders (like `public`) and dependencies (templating libraries like `jade`).
 
 ### Linting
 
@@ -24,8 +26,25 @@ This repo uses Cucumber and Chai for feature (or component) testing. I have incl
 
 ## Setup
 
-1. Clone this repo - `git clone https://github.com/nkhil/node_boilerplate.git`
-2. Install dependencies - `npm install`
+### Environment Variables
+
+Before anything else, create a `.env` file at the root of your application.
+
+**What to add to this file**
+
+- DATABASE: Link to connect to your dev (or live) database.
+- PORT: The port you'd like the app to run on.
+
+For eg:
+
+```env
+DATABASE=mongodb://username:password@youruniquelink.com:12345/database_name
+PORT=3000
+```
+
+- Clone this repo - `git clone https://github.com/nkhil/node_boilerplate.git`
+- Install dependencies - `npm install`
+- Run the app on a local server - `npm start`
 
 ## Testing
 
