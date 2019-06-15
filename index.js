@@ -14,7 +14,7 @@ mongoose.connection.on('error', err => {
   console.log(`ERROR OCCURED: ${err.message}`);
 });
 
-app.listen(config.express.port, () => {
+app.listen(process.env.PORT, () => {
   // eslint-disable-next-line no-console
   console.log(`Express running on port ${config.express.port}`);
 });
